@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   end
 
   if s.respond_to? :add_runtime_dependency then
-    s.add_runtime_dependency(%q<dry-configurable>.freeze, ["~> 0.14.0"])
+    s.add_runtime_dependency(%q<dry-configurable>.freeze, [">= 0.14.0"])
     s.add_runtime_dependency(%q<concurrent-ruby>.freeze, ["~> 1.1"])
     s.add_runtime_dependency(%q<oj>.freeze, [">= 0"])
     s.add_runtime_dependency(%q<ffi>.freeze, ["~> 1.0"])
@@ -38,7 +38,7 @@ Gem::Specification.new do |s|
     s.add_development_dependency(%q<yard>.freeze, ["~> 0.9"])
     s.add_development_dependency(%q<pry>.freeze, ["~> 0.11"])
   else
-    s.add_dependency(%q<dry-configurable>.freeze, ["~> 0.14.0"])
+    s.add_dependency(%q<dry-configurable>.freeze, [">= 0.14.0"])
     s.add_dependency(%q<concurrent-ruby>.freeze, ["~> 1.1"])
     s.add_dependency(%q<oj>.freeze, [">= 0"])
     s.add_dependency(%q<ffi>.freeze, ["~> 1.0"])
