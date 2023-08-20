@@ -36,7 +36,7 @@ class TD::ClientV1
     on TD::Types::Update::AuthorizationState do |update|
       case update.authorization_state
       when TD::Types::AuthorizationState::WaitTdlibParameters
-        set_tdlib_parameters(**@config)
+        setTdlibParameters(**@config)
       else
         # do nothing
       end
